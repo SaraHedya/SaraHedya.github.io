@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Contact Us - SoftWare Engineering Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+        <div class="logo">SoftWare Engineering Store</div>
+        <ul class="nav-links">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="orders.html" target="_blank" class="">Orders</a></li>
+            
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="signin.html" target="_blank" class="btn">Sign out</a></li>
+            <li class="cart">
+            <a href="#" onclick="toggleOrders(); return false;"> 
+                <img src="cart-icon.png" alt="Cart" class="cart-icon"> 
+                <span class="cart-badge" id="cartCount">0</span>
+            </a>
+          </li>
+        </ul>
+    </nav>
+   <section class="hero">
+        <div class="hero-text">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Fill the form below and we’ll get back to you as soon as possible.</p>
+        </div>
+
+        <div class="hero-image">
+            <img src="contact.jpg" alt="Contact Us">
+        </div>
+    </section>
+    
+
+
+ <section class="contact-section">
+<h2>Contact Us</h2>
+<form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name"><br><br>
+    <input type="text" id="email" placeholder="Your Email"><br><br>
+    <textarea id="message" placeholder="Your Message"></textarea><br><br>
+    <button type="submit" class="">Send</button>
+</form>
+<br>
+<p id="result"></p>
+</section>
+
+
+<script src="contact.js"></script>
+
+</body>
+</html>

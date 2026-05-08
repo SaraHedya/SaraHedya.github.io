@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>SoftWare Engineering Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SoftWare Engineering Store</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+             <li><a href="orders.html" target="_blank" class="">Orders</a></li>
+          
+            <li><a href="contact.html" target="_blank" class="">Contact Us</a></li>
+          <li><a href="signin.html" target="_blank" class="btn">Sign out</a></li>
+              <li class="cart">
+            <a href="#" onclick="toggleOrders(); return false;">        
+                <img src="cart-icon.png" alt="Cart" class="cart-icon"> 
+                <span class="cart-badge" id="cartCount">0</span>
+            </a>          
+          </li>
+        </ul>
+    </nav>
+
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h4>Welcome to Our Store</h4>
+            <h1>Built for Computer Engineers and Users</h1>
+            <p>
+                Everything you need for your PC in one store.
+                We offer a wide range of low-price electronics.
+                Delivery is available everywhere in Egypt.
+            </p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Type here">
+                <button id="searchBtn">search</button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="image.jpg" alt="PC">
+        </div>
+    </section>
+
+  
+    <section class="products">
+        <h2>Best Sellers</h2>
+
+        <div class="product-container">
+
+      
+
+            <div class="card">
+                <img src="Ryzen.jpg" alt="">
+                <h3>Ryzen 5</h3>
+                <p>أفضل أداء مقابل السعر</p>
+                <button class="btn" onclick="addToCart('Ryzen 5')">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Intel.jpg" alt="">
+                <h3>Intel Core Ultra 9</h3>
+                <p>معالج قوي للألعاب</p>
+                <button class="btn" onclick="addToCart('Intel Core Ultra 9')">Buy Now</button>
+            </div>
+
+           <div class="card">
+                <img src="GIGABYTE.jpg" alt="">
+                <h3>كارت شاشة احترافي</h3>
+                <p>أداء عالي للألعاب والتصميم</p>
+                <button class="btn" onclick="addToCart('كارت شاشة احترافي')">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Arktek NVIDIA.jpg" alt="">
+                <h3>كارت شاشة قوي</h3>
+                <p>تقنية حديثة وأداء ممتاز</p>
+                <button class="btn" onclick="addToCart('كارت شاشة قوي')">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
