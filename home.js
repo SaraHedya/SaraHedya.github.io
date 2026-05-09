@@ -1,4 +1,63 @@
+
+
+
+
+function searchProduct() {
+
+        let products = [
+        "cpu",
+        "processor",
+        "graphics card",
+        "gpu",
+        "motherboard",
+        "power supply",
+         "thermal solutions",
+         "cooler",
+         "fan",
+         "ssd",
+         "hard disk",
+         "ram",
+         "flash",
+          "memory",
+        "keyboard",
+        "mouse",
+
+        "scanner",
+
+        "printer",
+
+
+        "speaker"
+    ];
+      let query = document.getElementById("searchInput").value.toLowerCase();
+      
+
+              if (products.includes(query)) {
+                let section = document.querySelector(".products");
+  window.scrollTo({
+    top: section.offsetTop,
+    behavior: "smooth"
+});
+
+ }
+
+ else
+ {
+
+        alert("المنتج غير موجود");
+
+ }
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
+    let searchInput = document.getElementById("searchInput");
+
+     searchInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            searchProduct();
+        }
+    });
 
     let orders = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -60,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-
+     
     function removeItem(index) {
         orders.splice(index, 1);
         localStorage.setItem("cart", JSON.stringify(orders));

@@ -7,7 +7,7 @@
     <nav class="navbar">
         <div class="logo">SoftWare Engineering Store</div>
         <ul class="nav-links">
-            <li><a href="main.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
              <li><a href="orders.html" target="_blank" class="">Orders</a></li>
           
             <li><a href="contact.html" target="_blank" class="">Contact Us</a></li>
@@ -34,7 +34,7 @@
 
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Type here">
-                <button id="searchBtn">search</button>
+                <button id="searchBtn" onclick="searchProduct()">search</button>
             </div>
         </div>
 
@@ -44,7 +44,7 @@
     </section>
 
   
-    <section class="products">
+    <section class="products" >
         <h2>Best Sellers</h2>
 
         <div class="product-container">
@@ -78,6 +78,91 @@
                 <p>تقنية حديثة وأداء ممتاز</p>
                 <button class="btn" onclick="addToCart('كارت شاشة قوي')">Buy Now</button>
             </div>
+             <div class="card">
+                <img src="motherboard.jpg" alt="">
+                <h3>أفضل بوردة كمبيوتر</h3>
+                <p>بنية مادية للأجهزة مع توفير الطاقة</p>
+                <button class="btn" onclick="addToCart('أفضل بوردة كمبيوتر')">Buy Now</button>
+            </div>
+             <div class="card">
+                <img src="power.jpg" alt="">
+                <h3>ESGAMING 650W</h3>
+                <p>كفاءة عالية مع توفير الطاقة</p>
+                <button class="btn" onclick="addToCart('ESGAMING 650W')">Buy Now</button>
+            </div>
+             <div class="card">
+                <img src="thermal.jpg" alt="">
+                <h3>Cooler Master</h3>
+                <p>كفاءة عالية في التبريد والأداء</p>
+                <button class="btn" onclick="addToCart('Cooler Master')">Buy Now</button>
+            </div>
+             <div class="card">
+                <img src="ssd.jpg" alt="">
+                <h3>WD SSD 1 TB</h3>
+                <p>أفضل هارد ديسك داخلي</p>
+                <button class="btn" onclick="addToCart('WD SSD 1 TB')">Buy Now</button>
+            </div>
+             <div class="card">
+                <img src="ram.jpg" alt="">
+                <h3>Crucial RAM DDR5</h3>
+                <p>ذاكرة عالية الجودة</p>
+                <button class="btn" onclick="addToCart('Crucial RAM DDR5')">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="flash.jpg" alt="">
+                <h3>SanDisk USB</h3>
+                <p>أسرع فلاش ميموري وموثوقية عالية</p>
+                <button class="btn" onclick="addToCart('SanDisk USB')">Buy Now</button>
+            </div>
+
+
+             <div class="card">
+                <img src="zero.jpg" alt="">
+                <h3>ZERO Keyboard</h3>
+                <p>كيبورد احترافي</p>
+                <button class="btn" onclick="addToCart('ZERO Keyboard')">Buy Now</button>
+            </div>
+
+               <div class="card">
+                <img src="mouse.jpg" alt="">
+                <h3>ONIKUMA Mouse</h3>
+                <p>ماوس مناسب لأي واجهة رسومية</p>
+                <button class="btn" onclick="addToCart('ONIKUMA Gaming Mouse')">Buy Now</button>
+            </div>
+
+
+               <div class="card">
+                <img src="scanner.jpg" alt="">
+                <h3>Plustek Scanner</h3>
+                <p>مسح ضوئي سريع وسهل للمستندات</p>
+                <button class="btn" onclick="addToCart('Plustek Computer Scanner')">Buy Now</button>
+            </div>
+
+               <div class="card">
+                <img src="printer.jpg" alt="">
+                <h3>Canon PIXMA G640</h3>
+                <p>طباعة ملونة بجودة الصورة</p>
+                <button class="btn" onclick="addToCart('Canon PIXMA G640')">Buy Now</button>
+            </div>
+
+               <div class="card">
+                <img src="speaker.jpg" alt="">
+                <h3>Generic Speaker</h3>
+                <p>سماعة ومايك بلوتوث بآداء مميز</p>
+                <button class="btn" onclick="addToCart('Generic Speaker')">Buy Now</button>
+            </div>
+
+               
+
+
+
+
+
+
+
+
+
+            
 
         </div>
     </section>
