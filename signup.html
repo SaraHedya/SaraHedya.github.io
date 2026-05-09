@@ -30,20 +30,22 @@
         </div>
 
         <div class="hero-image">
-            <img src="signup.jpg" alt="Sign in">
+            <img src="signup.jpg" alt="Sign up">
         </div>
     </section>
     
 
  <section class="signup-section">
 <h2>Sign Up</h2>
-<form id="signinForm">
+<form id="signupform">
     <label for="name">Name</label>
     <br>
     <input type="text" id="firstname" placeholder="First Name" name="name"> <input type="text" id="lastname" placeholder="Last Name"name="name"><br><br>
     
      <label for="day">Date of birth</label>
     <br>
+
+    <div class="select-box">
     <select id="day" name="day">
   <option value="1">1</option>
   <option value="2">2</option>
@@ -128,7 +130,11 @@
   
 
   </select>
+  </div>
+
     <br><br>
+        <div class="gender-box">
+
   <label for="gender">Gender</label>
     <br>
   <select id="gender" name="gender">
@@ -137,8 +143,7 @@
   <option value="Male">Male</option>
 
   </select>
- 
-
+  </div>
         
         <br>        <br>
  
@@ -155,13 +160,15 @@
 
 
 
-  <label for="password">Confirm Password</label>
+  <label for="confirmpassword">Confirm Password</label>
     <br>
-    <input type="password" id="password" placeholder="Password" name="password"><br><br>
+    <input type="password" id="confirmpassword" placeholder="Password" name="confirmpassword"><br><br>
 
     <button type="submit" class="">Submit</button>
+    <br><p id="result"></p> <br>
+    <input type="button" value="Registered Customer?" class="up" onclick="signIn()">
     
-<p id="result"></p>
+
 </form>
 
 

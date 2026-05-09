@@ -213,3 +213,67 @@ button {
     border-radius: 50%;
     font-weight: bold;
 }
+
+
+
+
+.contact-section,
+.signup-section,
+.signin-section {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-section h2,
+.signup-section h2,
+.signin-section h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.contact-section input,
+.signup-section input,
+.signin-section input,
+.contact-section button,
+.signup-section button,
+.signin-section button,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+.contact-section textarea {
+    height: 100px;
+}
+
+
+
+.select-box  {
+ 
+    
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.select-box select,
+.gender-box select
+{
+padding: 10px;
+    margin-top: 6px;
+border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+}
