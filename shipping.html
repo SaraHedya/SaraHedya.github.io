@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Shipping and Delivery - SoftWare Engineering Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+        <div class="logo">SoftWare Engineering Store</div>
+        <ul class="nav-links">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="products.html" target="_blank" class="">Products</a></li>
+
+            <li><a href="orders.html" target="_blank" class="">Orders</a></li>
+            <li><a href="shipping.html" class="">Shipping and Delivery</a></li>
+
+            <li><a href="contact.html" target="_blank" class="">Contact Us</a></li>
+            <li><a href="index.html" class="btn">Sign out</a></li>
+            <li class="cart">
+            <a href="#" onclick="toggleOrders(); return false;"> 
+                <img src="cart-icon.png" alt="Cart" class="cart-icon"> 
+                <span class="cart-badge" id="cartCount">0</span>
+            </a>
+          </li>
+        </ul>
+    </nav>
+   <section class="hero">
+        <div class="hero-text">
+            <h1>Shipping and Delivery</h1>
+            <p>Order all you need! Delivery to anywhere.</p>
+        </div>
+
+        <div class="hero-image">
+            <img src="ship.jpg" alt="Contact Us">
+        </div>
+    </section>
+    
+
+
+ <section class="shipping-section">
+<h2>Shipping and Delivery</h2>
+
+
+ <div class="map-container">
+<iframe
+  src="https://www.google.com/maps?q=Helwan+University,Egypt&output=embed"
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+</div>
+  <div class="info">
+    <h2>Fast Delivery</h2>
+    <p>Your items are packed safely {Orders arrive within 2–5 business days}.</p>
+  </div>
+  <br>
+    <input type="button" value="Contact Support" class="up" onclick="window.location.href='contact.html'">
+
+
+
+</section>
+<script src="shipping.js"></script>
+</body>
+</html>

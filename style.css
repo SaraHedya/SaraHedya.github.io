@@ -121,14 +121,21 @@ body {
     margin-bottom: 40px;
     color: mediumvioletred;
 }
-
+.products h4 {
+    margin-bottom: 40px;
+    color: rebeccapurple;
+}
 .product-container {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
-
+del {
+    background: mediumvioletred;
+    color:  white;
+;
+}
 .card {
     background: white;
     width: 220px;
@@ -218,6 +225,8 @@ button {
 
 
 .contact-section,
+.products-section,
+.shipping-section,
 .signup-section,
 .signin-section {
     width: 90%;
@@ -230,6 +239,9 @@ button {
 }
 
 .contact-section h2,
+.products-section h2,
+.shipping-section h2,
+
 .signup-section h2,
 .signin-section h2{
     text-align: center;
@@ -237,6 +249,7 @@ button {
 }
 
 .contact-section input,
+.shipping-section input,
 .signup-section input,
 .signin-section input,
 .contact-section button,
@@ -272,8 +285,31 @@ button {
 .gender-box select
 {
 padding: 10px;
-    margin-top: 6px;
+    margin-top: 5px;
 border: 1px solid;
     border-radius: 10px;
     outline: none;
+}
+
+
+table {
+    border-collapse: separate;
+    width: 100%;
+     border-radius: 10px;
+ overflow: hidden;
+  border-spacing: 0;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    
+
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+   
+
 }

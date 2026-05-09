@@ -8,10 +8,12 @@
         <div class="logo">SoftWare Engineering Store</div>
         <ul class="nav-links">
             <li><a href="home.html">Home</a></li>
+            <li><a href="products.html" target="_blank" class="">Products</a></li>
              <li><a href="orders.html" target="_blank" class="">Orders</a></li>
-          
+                    <li><a href="shipping.html" target="_blank" class="">Shipping and Delivery</a></li>
+
             <li><a href="contact.html" target="_blank" class="">Contact Us</a></li>
-          <li><a href="index.html" target="_blank" class="btn">Sign out</a></li>
+          <li><a href="index.html" class="btn">Sign out</a></li>
               <li class="cart">
             <a href="#" onclick="toggleOrders(); return false;">        
                 <img src="cart-icon.png" alt="Cart" class="cart-icon"> 
@@ -46,7 +48,7 @@
   
     <section class="products" >
         <h2>Best Sellers</h2>
-
+        <h4>Enjoy 0.5% discount on extra item</h4>
         <div class="product-container">
 
       
@@ -55,64 +57,80 @@
                 <img src="Ryzen.jpg" alt="">
                 <h3>Ryzen 5</h3>
                 <p>أفضل أداء مقابل السعر</p>
-                <button class="btn" onclick="addToCart('Ryzen 5')">Buy Now</button>
+                <p >   
+                
+                     <span class="price">8,000 EGP</span> <del class="old-price">8,000 EGP</del>
+                    </p>
+                
+                <button class="btn" onclick="addToCart('Ryzen 5');updatePrice(this);">Buy Now</button>
             </div>
 
             <div class="card">
                 <img src="Intel.jpg" alt="">
                 <h3>Intel Core Ultra 9</h3>
                 <p>معالج قوي للألعاب</p>
-                <button class="btn" onclick="addToCart('Intel Core Ultra 9')">Buy Now</button>
+                <p><span class="price">31,000 EGP</span> <del class="old-price">31,000 EGP</del></p>
+                <button class="btn" onclick="addToCart('Intel Core Ultra 9');updatePrice(this);">Buy Now</button>
             </div>
 
            <div class="card">
                 <img src="GIGABYTE.jpg" alt="">
                 <h3>كارت شاشة احترافي</h3>
                 <p>أداء عالي للألعاب والتصميم</p>
-                <button class="btn" onclick="addToCart('كارت شاشة احترافي')">Buy Now</button>
+                <p><span class="price">81,000 EGP</span> <del class="old-price">81,000 EGP</del> </p>
+                <button class="btn" onclick="addToCart('كارت شاشة احترافي');updatePrice(this);">Buy Now</button>
             </div>
 
             <div class="card">
                 <img src="Arktek NVIDIA.jpg" alt="">
                 <h3>كارت شاشة قوي</h3>
                 <p>تقنية حديثة وأداء ممتاز</p>
-                <button class="btn" onclick="addToCart('كارت شاشة قوي')">Buy Now</button>
+                <p><span class="price">14,000 EGP</span> <del class="old-price">14,000 EGP</del> </p>
+               
+
+                <button class="btn" onclick="addToCart('كارت شاشة قوي');updatePrice(this);">Buy Now</button>
             </div>
              <div class="card">
                 <img src="motherboard.jpg" alt="">
                 <h3>أفضل بوردة كمبيوتر</h3>
                 <p>بنية مادية للأجهزة مع توفير الطاقة</p>
-                <button class="btn" onclick="addToCart('أفضل بوردة كمبيوتر')">Buy Now</button>
+                <p><span class="price">15,500 EGP</span> <del class="old-price">15,500 EGP</del> </p>
+                <button class="btn" onclick="addToCart('أفضل بوردة كمبيوتر');updatePrice(this);">Buy Now</button>
             </div>
              <div class="card">
                 <img src="power.jpg" alt="">
                 <h3>ESGAMING 650W</h3>
                 <p>كفاءة عالية مع توفير الطاقة</p>
-                <button class="btn" onclick="addToCart('ESGAMING 650W')">Buy Now</button>
+                <p><span class="price">3,500 EGP</span> <del class="old-price">3,500 EGP</del> </p>
+                <button class="btn" onclick="addToCart('ESGAMING 650W');updatePrice(this);">Buy Now</button>
             </div>
              <div class="card">
                 <img src="thermal.jpg" alt="">
                 <h3>Cooler Master</h3>
                 <p>كفاءة عالية في التبريد والأداء</p>
-                <button class="btn" onclick="addToCart('Cooler Master')">Buy Now</button>
+                <p><span class="price">6,500 EGP</span> <del class="old-price">6,500 EGP</del>  </p>
+                <button class="btn" onclick="addToCart('Cooler Master');updatePrice(this);">Buy Now</button>
             </div>
              <div class="card">
                 <img src="ssd.jpg" alt="">
                 <h3>WD SSD 1 TB</h3>
                 <p>أفضل هارد ديسك داخلي</p>
-                <button class="btn" onclick="addToCart('WD SSD 1 TB')">Buy Now</button>
+                <p><span class="price">7,000 EGP</span> <del class="old-price">7,000 EGP</del>  </p>
+                <button class="btn" onclick="addToCart('WD SSD 1 TB');updatePrice(this);">Buy Now</button>
             </div>
              <div class="card">
                 <img src="ram.jpg" alt="">
                 <h3>Crucial RAM DDR5</h3>
                 <p>ذاكرة عالية الجودة</p>
-                <button class="btn" onclick="addToCart('Crucial RAM DDR5')">Buy Now</button>
+                <p><span class="price">9,500 EGP</span> <del class="old-price">9,500 EGP</del> </p>
+                <button class="btn" onclick="addToCart('Crucial RAM DDR5');updatePrice(this);">Buy Now</button>
             </div>
             <div class="card">
                 <img src="flash.jpg" alt="">
                 <h3>SanDisk USB</h3>
                 <p>أسرع فلاش ميموري وموثوقية عالية</p>
-                <button class="btn" onclick="addToCart('SanDisk USB')">Buy Now</button>
+                <p><span class="price">350 EGPP</span> <del class="old-price">350 EGP</del> </p>
+                <button class="btn" onclick="addToCart('SanDisk USB');updatePrice(this);">Buy Now</button>
             </div>
 
 
@@ -120,14 +138,17 @@
                 <img src="zero.jpg" alt="">
                 <h3>ZERO Keyboard</h3>
                 <p>كيبورد احترافي</p>
-                <button class="btn" onclick="addToCart('ZERO Keyboard')">Buy Now</button>
+              <p><span class="price">250 EGP</span> <del class="old-price">250 EGP</del>  </p>
+
+                <button class="btn" onclick="addToCart('ZERO Keyboard');updatePrice(this);">Buy Now</button>
             </div>
 
                <div class="card">
                 <img src="mouse.jpg" alt="">
                 <h3>ONIKUMA Mouse</h3>
                 <p>ماوس مناسب لأي واجهة رسومية</p>
-                <button class="btn" onclick="addToCart('ONIKUMA Gaming Mouse')">Buy Now</button>
+                <p><span class="price">400 EGP</span> <del class="old-price">400 EGP</del></p>
+                <button class="btn" onclick="addToCart('ONIKUMA Gaming Mouse');updatePrice(this);">Buy Now</button>
             </div>
 
 
@@ -135,21 +156,24 @@
                 <img src="scanner.jpg" alt="">
                 <h3>Plustek Scanner</h3>
                 <p>مسح ضوئي سريع وسهل للمستندات</p>
-                <button class="btn" onclick="addToCart('Plustek Computer Scanner')">Buy Now</button>
+                <p><span class="price">5,000 EGP</span> <del class="old-price">5,000 EGP</del></p>
+                <button class="btn" onclick="addToCart('Plustek Computer Scanner');updatePrice(this);">Buy Now</button>
             </div>
 
                <div class="card">
                 <img src="printer.jpg" alt="">
                 <h3>Canon PIXMA G640</h3>
                 <p>طباعة ملونة بجودة الصورة</p>
-                <button class="btn" onclick="addToCart('Canon PIXMA G640')">Buy Now</button>
+                <p><span class="price">13,000 EGP</span> <del class="old-price">13,000 EGP</del></p>
+                <button class="btn" onclick="addToCart('Canon PIXMA G640');updatePrice(this);">Buy Now</button>
             </div>
 
                <div class="card">
                 <img src="speaker.jpg" alt="">
                 <h3>Generic Speaker</h3>
                 <p>سماعة ومايك بلوتوث بآداء مميز</p>
-                <button class="btn" onclick="addToCart('Generic Speaker')">Buy Now</button>
+                <p><span class="price">900 EGP</span> <del class="old-price">900 EGP</del></p>
+                <button class="btn" onclick="addToCart('Generic Speaker');updatePrice(this);">Buy Now</button>
             </div>
 
                
